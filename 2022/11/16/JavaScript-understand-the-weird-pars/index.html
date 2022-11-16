@@ -20,25 +20,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="寫下閱讀心得。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wilson 的個人筆記">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="前言 - 不要模仿！了解它！此系列筆記用於紀錄閱讀 Udemy 上的課程『克服 JavaScript 奇怪的部分』的心得筆記。 重點字與觀念小叮嚀Big Word Alert - 重點字提示貫穿此系列所有筆記，重點提示文章內所講述到的所有的知識點。在此，我會用一樣的標籤與字體大小著重標記，並且寫下註解。 Syntax Parsers - 語法解析器一個程式，如果你的語法是有效的，它能夠讀取程式碼並">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript - 克服 Javascript 奇怪的部分(0) - 觀念小叮嚀">
+<meta property="og:url" content="http://example.com/2022/11/16/JavaScript-understand-the-weird-pars/index.html">
 <meta property="og:site_name" content="Wilson 的個人筆記">
-<meta property="og:description" content="寫下閱讀心得。">
+<meta property="og:description" content="前言 - 不要模仿！了解它！此系列筆記用於紀錄閱讀 Udemy 上的課程『克服 JavaScript 奇怪的部分』的心得筆記。 重點字與觀念小叮嚀Big Word Alert - 重點字提示貫穿此系列所有筆記，重點提示文章內所講述到的所有的知識點。在此，我會用一樣的標籤與字體大小著重標記，並且寫下註解。 Syntax Parsers - 語法解析器一個程式，如果你的語法是有效的，它能夠讀取程式碼並">
 <meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/2022/11/16/JavaScript-understand-the-weird-pars/object-example.jpg">
+<meta property="article:published_time" content="2022-11-16T09:54:34.000Z">
+<meta property="article:modified_time" content="2022-11-16T13:27:06.210Z">
 <meta property="article:author" content="Wilson Chen">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/11/16/JavaScript-understand-the-weird-pars/object-example.jpg">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2022/11/16/JavaScript-understand-the-weird-pars/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-TW","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"http://example.com/2022/11/16/JavaScript-understand-the-weird-pars/","path":"2022/11/16/JavaScript-understand-the-weird-pars/","title":"JavaScript - 克服 Javascript 奇怪的部分(0) - 觀念小叮嚀"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Wilson 的個人筆記</title>
+<title>JavaScript - 克服 Javascript 奇怪的部分(0) - 觀念小叮嚀 | Wilson 的個人筆記</title>
   
 
 
@@ -73,7 +77,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Wilson 的個人筆記</h1>
+      <p class="site-title">Wilson 的個人筆記</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -99,7 +103,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目錄
@@ -112,6 +116,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80-%E4%B8%8D%E8%A6%81%E6%A8%A1%E4%BB%BF%EF%BC%81%E4%BA%86%E8%A7%A3%E5%AE%83%EF%BC%81"><span class="nav-number">1.</span> <span class="nav-text">前言 - 不要模仿！了解它！</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E9%BB%9E%E5%AD%97%E8%88%87%E8%A7%80%E5%BF%B5%E5%B0%8F%E5%8F%AE%E5%9A%80"><span class="nav-number">2.</span> <span class="nav-text">重點字與觀念小叮嚀</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Word-Alert-%E9%87%8D%E9%BB%9E%E5%AD%97%E6%8F%90%E7%A4%BA"><span class="nav-number">2.1.</span> <span class="nav-text">Big Word Alert - 重點字提示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Syntax-Parsers-%E8%AA%9E%E6%B3%95%E8%A7%A3%E6%9E%90%E5%99%A8"><span class="nav-number">2.2.</span> <span class="nav-text">Syntax Parsers - 語法解析器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lexical-Environments-%E8%A9%9E%E5%BD%99%E7%92%B0%E5%A2%83"><span class="nav-number">2.3.</span> <span class="nav-text">Lexical Environments - 詞彙環境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Execution-Contexts-%E5%9F%B7%E8%A1%8C%E7%92%B0%E5%A2%83"><span class="nav-number">2.4.</span> <span class="nav-text">Execution Contexts - 執行環境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Name-x2F-Value-pairs-and-Object-%E5%90%8D%E7%A8%B1-x2F-%E5%80%BC%E9%85%8D%E5%B0%8D%E8%88%87%E7%89%A9%E4%BB%B6"><span class="nav-number">2.5.</span> <span class="nav-text">Name&#x2F;Value pairs and Object - 名稱 &#x2F; 值配對與物件</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -156,16 +161,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/16/JavaScript-understand-the-weird-pars/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -179,13 +185,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Wilson 的個人筆記">
+      <meta itemprop="name" content="JavaScript - 克服 Javascript 奇怪的部分(0) - 觀念小叮嚀 | Wilson 的個人筆記">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/11/16/JavaScript-understand-the-weird-pars/" class="post-title-link" itemprop="url">JavaScript - 克服 Javascript 奇怪的部分(0) - 觀念小叮嚀</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          JavaScript - 克服 Javascript 奇怪的部分(0) - 觀念小叮嚀
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -218,7 +224,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="前言-不要模仿！了解它！"><a href="#前言-不要模仿！了解它！" class="headerlink" title="前言 - 不要模仿！了解它！"></a>前言 - 不要模仿！了解它！</h2><p>此系列筆記用於紀錄閱讀 Udemy 上的課程『克服 JavaScript 奇怪的部分』的心得筆記。</p>
+        <h2 id="前言-不要模仿！了解它！"><a href="#前言-不要模仿！了解它！" class="headerlink" title="前言 - 不要模仿！了解它！"></a>前言 - 不要模仿！了解它！</h2><p>此系列筆記用於紀錄閱讀 Udemy 上的課程『克服 JavaScript 奇怪的部分』的心得筆記。</p>
 <h2 id="重點字與觀念小叮嚀"><a href="#重點字與觀念小叮嚀" class="headerlink" title="重點字與觀念小叮嚀"></a>重點字與觀念小叮嚀</h2><h3 id="Big-Word-Alert-重點字提示"><a href="#Big-Word-Alert-重點字提示" class="headerlink" title="Big Word Alert - 重點字提示"></a>Big Word Alert - 重點字提示</h3><p>貫穿此系列所有筆記，重點提示文章內所講述到的所有的知識點。<br>在此，我會用一樣的標籤與字體大小著重標記，並且寫下註解。</p>
 <h3 id="Syntax-Parsers-語法解析器"><a href="#Syntax-Parsers-語法解析器" class="headerlink" title="Syntax Parsers - 語法解析器"></a>Syntax Parsers - 語法解析器</h3><p>一個程式，如果你的語法是有效的，它能夠讀取程式碼並且決定如何動作。</p>
 <p>你寫下了一段程式碼，然後有其他人寫了一個程式，把你寫的程式碼轉換成電腦能看懂的東西，這些程式稱之為「編譯器」。而這些程式，會一字一句讀取你的程式碼，並決定這些語法是否有效，然後將這些程式碼轉換成為電腦能夠讀懂的語言</p>
@@ -239,7 +245,6 @@
 
 <p>在 JavaScript 上的物件就是這樣而已，非常簡單。</p>
 
-      
     </div>
 
     
@@ -247,188 +252,22 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/11/16/JavaScript%E5%85%A8%E7%AB%AF%E9%96%8B%E7%99%BC%E5%BF%83%E5%BE%97%E7%AD%86%E8%A8%98-1/" rel="prev" title="JavaScript全端開發心得筆記(1)">
+                  <i class="fa fa-chevron-left"></i> JavaScript全端開發心得筆記(1)
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/16/JavaScript%E5%85%A8%E7%AB%AF%E9%96%8B%E7%99%BC%E5%BF%83%E5%BE%97%E7%AD%86%E8%A8%98-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Wilson Chen">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wilson 的個人筆記">
-      <meta itemprop="description" content="寫下閱讀心得。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Wilson 的個人筆記">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/11/16/JavaScript%E5%85%A8%E7%AB%AF%E9%96%8B%E7%99%BC%E5%BF%83%E5%BE%97%E7%AD%86%E8%A8%98-1/" class="post-title-link" itemprop="url">JavaScript全端開發心得筆記(1)</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-      
-
-      <time title="創建時間：2022-11-16 17:13:30 / 修改時間：17:14:11" itemprop="dateCreated datePublished" datetime="2022-11-16T17:13:30+08:00">2022-11-16</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/JavaScript-%E5%85%A8%E7%AB%AF%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">JavaScript 全端開發筆記</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/16/hexo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Wilson Chen">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wilson 的個人筆記">
-      <meta itemprop="description" content="寫下閱讀心得。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Wilson 的個人筆記">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/11/16/hexo/" class="post-title-link" itemprop="url">hexo 使用筆記</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-      
-
-      <time title="創建時間：2022-11-16 02:20:45 / 修改時間：17:05:19" itemprop="dateCreated datePublished" datetime="2022-11-16T02:20:45+08:00">2022-11-16</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>本篇主要用於紀錄如何使用 Hexo 框架搭配 GitHub 快速建立並架設網誌。</p>
-<h2 id="介紹："><a href="#介紹：" class="headerlink" title="介紹："></a>介紹：</h2><p>Hexo 是個基於 node.js 的部落格框架，它能夠支援 Markdown 語法解析文章，並且透過套用的主題渲染靜態網站。  </p>
-<h4 id="為何使用-Hexo-："><a href="#為何使用-Hexo-：" class="headerlink" title="為何使用 Hexo ："></a>為何使用 Hexo ：</h4><ul>
-<li>使用 markdown 語法，我可以專注於部落格撰寫，不會被樣式與語法拉開注意力。</li>
-<li>中文資源豐富，不必硬啃下其他語言所撰寫的文件。</li>
-<li>多樣化套版，可以隨心所欲切換不同的主題，且不必自行撰寫樣式。</li>
-</ul>
-<h2 id="開始使用-Hexo-："><a href="#開始使用-Hexo-：" class="headerlink" title="開始使用 Hexo ："></a>開始使用 Hexo ：</h2><p>以下預設已完成環境建置</p>
-<img src="/2022/11/16/hexo/intro.jpg" class="" title="intro">
-
-<p>透過 npm 或 yarn 安裝 hexo-cli (我偏好使用 npm)</p>
-<p><code>$ npm install hexo-cli -g</code>  </p>
-<p>建立 Hexo 專案</p>
-<p><code>$ hexo init [your blog name]</code></p>
-<p>進入 你的專案資料夾 </p>
-<p><code>$ cd [your blog name]</code></p>
-<p>npm 下載 hexo 所需套件</p>
-<p><code>$ npm install</code></p>
-<p>啟動 server </p>
-<p><code>$ hexo server</code></p>
-<p>完成</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
